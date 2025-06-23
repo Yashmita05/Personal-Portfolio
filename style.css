@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #071131;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(17, 17, 62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul a{
+   text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(174, 174, 236);
+    font-size: 1.04rem;
+}
+.left{
+    font-size: 1.3rem;
+    color: blueviolet;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+  
+    margin: 90px 0;
+}
+.first > div{
+    width: 30%;
+}
+
+.leftsection{
+    font-size: 2rem;
+    width: 34px;
+    margin: 70px 0 ;
+
+}
+button{
+    padding: 10px;
+    color: white;
+    background-color: #1e2167;
+    border: 2px solid white ;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.rightsection img{
+    margin: 50px 0;
+    width: 80%;
+
+}
+.purple{
+   color: blueviolet;
+}
+#element{
+     color: blueviolet;
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+}
+.secondsection h1{
+  font-size: 1.6rem;
+ 
+}
+.text-gray{
+    color: gray;
+}
+.secondsection .box {
+  display: flex;
+  justify-content: center; /* spreads evenly with minimal gap */
+  align-items: flex-start;
+  flex-wrap:wrap; /* keeps them in a row */
+  gap: 10px; /* moderate gap; reduce if needed */
+  width: 100%;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.vertical {
+  flex: 1; /* each item takes equal space */
+  min-width: 0; /* prevents overflow */
+  padding: 20px;
+  border-left: 2px solid white;
+  position: relative;
+  max-width: 400px; /* limits how wide each card can go */
+}
+
+
+.vertical::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+
+.vertical-title {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.vertical-desc {
+  color: gray;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.vertical-desc ul {
+  padding-left: 15px;
+  text-align: left;
+}
+.vertical-desc li {
+  margin-bottom: 8px;
+}
+
+
+.secondsection .vertical:nth-child(1) {
+  left:0%;
+}
+.secondsection .vertical:nth-child(2) {
+  left: 25%;
+}
+
+footer {
+  background-color: #11113e;
+  color: white;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.footer-left h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #9c97f1;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  color: #ccc;
+  max-width: 300px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin: 8px 0;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-right ul li a:hover {
+  color: #9c97f1;
+}
+
+.text-center {
+  text-align: center;
+  color: gray;
+  font-size: 0.85rem;
+  padding-top: 20px;
+}
+
+.about-section {
+    max-width: 80vw;
+    margin: 60px auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.about-section h1 {
+    color: blueviolet;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.about-section p {
+    color: #ccc;
+}
+.skills-section {
+  max-width: 80vw;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.skills-section h1 {
+  text-align: center;
+  color: blueviolet;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills-category {
+  background-color: #1e2167;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #9c97f1;
+}
+
+.skills-category h2 {
+  color: #9c97f1;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.skills-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-category li {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 1rem;
+}
+.projects-section {
+  max-width: 80vw;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.projects-section h1 {
+  text-align: center;
+  color: blueviolet;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: #1e2167;
+  border: 1px solid #9c97f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  color: #9c97f1;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.project-card ul li {
+  margin-bottom: 8px;
+}
+.contact-section {
+  max-width: 80vw;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: blueviolet;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+.contact-details a {
+  color: #9c97f1;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+.secondsection h1{
+    color: blueviolet;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+i{
+    margin-right: 8px;
+}
